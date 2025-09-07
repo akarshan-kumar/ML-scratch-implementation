@@ -17,8 +17,8 @@ class LinearRegression():
             Y = torch.from_numpy(Y).float()
         rows, n_features = X.shape
         # #print(X.shape)
-        self.w = torch.zero_(torch.Tensor(n_features))
-        self.b = torch.zero_(torch.Tensor(1))
+        self.w = torch.rand((n_features))
+        self.b = torch.rand((1))
 
         #print(self.w.shape)
         #print(self.b.shape)
