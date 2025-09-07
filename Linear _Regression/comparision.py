@@ -17,7 +17,6 @@ model1.fit(x_train,y_train)
 predictions1 = model1.predict(X)
 error1 = mean_squared_error(Y,predictions1)
 
-print(error1)
 
 cmap = plt.get_cmap('viridis')
 m1 = plt.scatter(X[:,0],predictions1, color=cmap(0.9), marker='.', label='Sklearn Model')
@@ -30,6 +29,8 @@ model2.fit(x_train,y_train)
 
 predictions2 = model2.predict(X)
 error2 = mean_squared_error(Y,predictions2)
+
+print(error1)
 
 print(error2)
 
